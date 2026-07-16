@@ -509,7 +509,9 @@ const mData=[
  ['Social content',520,'radial-gradient(90% 120% at 50% 110%,#8A4BFF,transparent 55%),#0A1530'],
  ['Documentary still',360,'radial-gradient(130% 110% at 15% 15%,#35128F,transparent 58%),#081128']];
 $('#masonry').innerHTML=mData.map(([t,h,bg])=>
- `<figure class="m-item"><div class="m-fill" style="height:${h}px;background:${bg}"></div><figcaption class="tag">${t}</figcaption></figure>`).join('');
+`<figure class="m-item"><div class="m-fill" style="height:${h}px;background:${bg}">
+	<img src="https://cdn.phototourl.com/free/2026-07-16-ea042c8a-dddb-4f87-952e-fc90f40bca4d.jpg"/>
+</div><figcaption class="tag">${t}</figcaption></figure>`).join('');
 
 /* process timeline */
 const steps=[['Discover','Goals, audience, and vision'],['Research','References and strategy'],
